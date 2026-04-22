@@ -5,22 +5,20 @@
 <a id="106" class="Comment">-- Automatic solvers for equations over integers</a>
 <a id="155" class="Comment">------------------------------------------------------------------------</a>
 
-<a id="229" class="Comment">-- See README.Integer for examples of how to use this solver</a>
+<a id="229" class="Comment">-- See README.Data.Integer for examples of how to use this solver</a>
 
-<a id="291" class="Symbol">{-#</a> <a id="295" class="Keyword">OPTIONS</a> <a id="303" class="Pragma">--without-K</a> <a id="315" class="Pragma">--safe</a> <a id="322" class="Symbol">#-}</a>
+<a id="296" class="Symbol">{-#</a> <a id="300" class="Keyword">OPTIONS</a> <a id="308" class="Pragma">--cubical-compatible</a> <a id="329" class="Pragma">--safe</a> <a id="336" class="Symbol">#-}</a>
 
-<a id="327" class="Keyword">module</a> <a id="334" href="Data.Integer.Solver.html" class="Module">Data.Integer.Solver</a> <a id="354" class="Keyword">where</a>
+<a id="341" class="Keyword">module</a> <a id="348" href="Data.Integer.Solver.html" class="Module">Data.Integer.Solver</a> <a id="368" class="Keyword">where</a>
 
-<a id="361" class="Keyword">import</a> <a id="368" href="Algebra.Solver.Ring.Simple.html" class="Module">Algebra.Solver.Ring.Simple</a> <a id="395" class="Symbol">as</a> <a id="398" class="Module">Solver</a>
-<a id="405" class="Keyword">import</a> <a id="412" href="Algebra.Solver.Ring.AlmostCommutativeRing.html" class="Module">Algebra.Solver.Ring.AlmostCommutativeRing</a> <a id="454" class="Symbol">as</a> <a id="457" class="Module">ACR</a>
-<a id="461" class="Keyword">open</a> <a id="466" class="Keyword">import</a> <a id="473" href="Data.Integer.html" class="Module">Data.Integer</a> <a id="486" class="Keyword">using</a> <a id="492" class="Symbol">(</a><a id="493" href="Data.Integer.Properties.html#1826" class="Function Operator">_≟_</a><a id="496" class="Symbol">)</a>
-<a id="498" class="Keyword">open</a> <a id="503" class="Keyword">import</a> <a id="510" href="Data.Integer.Properties.html" class="Module">Data.Integer.Properties</a> <a id="534" class="Keyword">using</a> <a id="540" class="Symbol">(</a><a id="541" href="Data.Integer.Properties.html#39891" class="Function">+-*-commutativeRing</a><a id="560" class="Symbol">)</a>
+<a id="375" class="Keyword">import</a> <a id="382" href="Algebra.Solver.Ring.Simple.html" class="Module">Algebra.Solver.Ring.Simple</a> <a id="409" class="Symbol">as</a> <a id="412" class="Module">Solver</a>
+<a id="419" class="Keyword">import</a> <a id="426" href="Algebra.Solver.Ring.AlmostCommutativeRing.html" class="Module">Algebra.Solver.Ring.AlmostCommutativeRing</a> <a id="468" class="Symbol">as</a> <a id="471" class="Module">ACR</a>
+<a id="475" class="Keyword">open</a> <a id="480" class="Keyword">import</a> <a id="487" href="Data.Integer.Properties.html" class="Module">Data.Integer.Properties</a> <a id="511" class="Keyword">using</a> <a id="517" class="Symbol">(</a><a id="518" href="Data.Integer.Properties.html#3108" class="Function Operator">_≟_</a><a id="521" class="Symbol">;</a> <a id="523" href="Data.Integer.Properties.html#53079" class="Function">+-*-commutativeRing</a><a id="542" class="Symbol">)</a>
 
-<a id="563" class="Comment">------------------------------------------------------------------------</a>
-<a id="636" class="Comment">-- A module for automatically solving propositional equivalences</a>
-<a id="701" class="Comment">-- containing _+_ and _*_</a>
+<a id="545" class="Comment">------------------------------------------------------------------------</a>
+<a id="618" class="Comment">-- A module for automatically solving propositional equivalences</a>
+<a id="683" class="Comment">-- containing _+_ and _*_</a>
 
-<a id="728" class="Comment">-- A module for automatically solving propositional equivalences</a>
-<a id="793" class="Keyword">module</a> <a id="+-*-Solver"></a><a id="800" href="Data.Integer.Solver.html#800" class="Module">+-*-Solver</a> <a id="811" class="Symbol">=</a>
-  <a id="815" href="Algebra.Solver.Ring.Simple.html" class="Module">Solver</a> <a id="822" class="Symbol">(</a><a id="823" href="Algebra.Solver.Ring.AlmostCommutativeRing.html#3624" class="Function">ACR.fromCommutativeRing</a> <a id="847" href="Data.Integer.Properties.html#39891" class="Function">+-*-commutativeRing</a><a id="866" class="Symbol">)</a> <a id="868" href="Data.Integer.Properties.html#1826" class="Function Operator">_≟_</a>
+<a id="710" class="Keyword">module</a> <a id="+-*-Solver"></a><a id="717" href="Data.Integer.Solver.html#717" class="Module">+-*-Solver</a> <a id="728" class="Symbol">=</a>
+  <a id="732" href="Algebra.Solver.Ring.Simple.html" class="Module">Solver</a> <a id="739" class="Symbol">(</a><a id="740" href="Algebra.Solver.Ring.AlmostCommutativeRing.html#3895" class="Function">ACR.fromCommutativeRing</a> <a id="764" href="Data.Integer.Properties.html#53079" class="Function">+-*-commutativeRing</a><a id="783" class="Symbol">)</a> <a id="785" href="Data.Integer.Properties.html#3108" class="Function Operator">_≟_</a>
 </pre></body></html>
